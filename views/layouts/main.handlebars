@@ -10,9 +10,13 @@
     <body>
         <header>
             <nav>
-                <a href="/">Home</a>
-                <a href="/dashboard">Dashboard</a>
-                <button class="btn-no-style">Logout</button>
+                <a class="nav-link" href="/">Home</a>
+                {{#if loggedIn}}
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+                <button id="logout" class="btn-no-style">Logout</button>
+                {{else}}
+                <a class="nav-link" href="/login">Login</a>
+                {{/if}}
             </nav>
             <div class="head-title">
                 The Tech Blog
@@ -20,7 +24,13 @@
         </header>
 
         <main>
+            <div class="post-container">
             {{{ body }}}
+            </div>
         </main>
+        
+        {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
+        {{/if}}
     </body>
 </html>

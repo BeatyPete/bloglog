@@ -10,9 +10,9 @@
     <body>
         <header>
             <nav>
-                <a>Home</a>
-                <a>Dashboard</a>
-                <a>Logout</a>
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">Dashboard</a>
+                <a class="nav-link" href="/">Logout</a>
             </nav>
             <div class="head-title">
                 The Tech Blog
@@ -34,18 +34,25 @@
                         </p>
                     </div>
                 </article>
+                
                 <article>
                     <div class="post-header">
-                        <h1 class="post-title">Why MVC is so important</h1>
-                        <div>Posted by Xandromus on 5/8/2020</div>
+                        <h1 class="post-title">Login</h1>
                     </div>
-                    <div>
-                        <p class="post-body">
-                            MVC allows developers to maintain a true separation of concerns, 
-                            decising their code betweeen the model layer for data, 
-                            the view layer for design, and the Controller layer for application logic.
-                        </p>
-                    </div>
+                    <form class="login-form">
+                        <div>
+                            <label for="email-login">Username</label>
+                            <input type="text" id="email-login" />
+                        </div>
+                        <div>
+                            <label for="password-login">Password</label>
+                            <input type="password" id="password-login" />
+                        </div>
+                        <div>
+                            <button class="login-btn" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <a class="signup-switch" href="/signup">Sign up instead</a>
                 </article>
             </div>
         </main>

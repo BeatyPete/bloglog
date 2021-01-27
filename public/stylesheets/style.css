@@ -16,10 +16,10 @@ nav {
     padding-bottom: 10px;
     margin-left: 3rem;
 }
-a {
+.nav-link {
     color: var(--primary-color);
 }
-a:hover {
+.nav-link:hover {
     color: var(--primary-color);
 }
 .btn-no-style {
@@ -82,4 +82,25 @@ article {
     font-size: 1.3rem;
     padding: 0px 20px;
     margin-top: 16px;
+}
+
+.login-form {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
+}
+input {
+    width: 100%;
+}
+.login-btn {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+label {
+    margin-bottom: 0;
+}
+.signup-switch {
+    padding-left: 20px;
 }
