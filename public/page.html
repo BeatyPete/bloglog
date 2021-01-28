@@ -10,9 +10,9 @@
     <body>
         <header>
             <nav>
-                <a class="nav-link" href="/">Home</a>
-                <a class="nav-link" href="/">Dashboard</a>
-                <a class="nav-link" href="/">Logout</a>
+                <a class="nav-plink" href="/">Home</a>
+                <a class="nav-plink" href="/">Dashboard</a>
+                <a class="nav-plink" href="/">Logout</a>
             </nav>
             <div class="head-title">
                 The Tech Blog
@@ -40,13 +40,15 @@
                     </form>
                 </article> -->
 
-                <div class="post-btn-container">
+                <!-- <div class="post-btn-container">
                     <button class="post-btn">+ New Post</button>
-                </div>
+                </div> -->
 
                 <article>
                     <div class="post-header">
-                        <h1 class="post-title">Why MVC is so important</h1>
+                        <h1 class="post-title">
+                            <a class="nav-plink" href="/post/1" >Why MVC is so important</a>
+                        </h1>
                         <div>Posted by Xandromus on 5/8/2020</div>
                     </div>
                     <div>
@@ -58,27 +60,33 @@
                     </div>
                 </article>
 
-                <!-- <article>
+                <article class="comment">
                     <div class="post-header">
-                        <h1 class="post-title">Login</h1>
+                        <h1 class="post-title"></h1>
+                        <div>Commented by Xandromus on 5/8/2020</div>
+                    </div>
+                    <div>
+                        <p class="post-body">
+                            you stinky smelly buttface poopoohead i hate you die please thank you
+                        </p>
+                    </div>
+                </article>
+                
+                <article>
+                    <div class="post-header">
+                        <h1 class="post-title"></h1>
                     </div>
                     <form class="login-form">
                         <div>
-                            <label for="email-login">Username</label>
-                            <input type="text" id="email-login" />
+                            <label for="comment">Comment</label>
+                            <textarea type="text" id="comment"></textarea>
                         </div>
                         <div>
-                            <label for="password-login">Password</label>
-                            <input type="password" id="password-login" />
-                        </div>
-                        <div>
-                            <button class="login-btn" type="submit">Login</button>
+                            <button class="login-btn" type="submit">Submit</button>
                         </div>
                     </form>
-                    <a class="signup-switch" href="/signup">Sign up instead</a>
-                </article> -->
+                </article>
                 
-                <script src="./javascript/new-post.js"></script>
             </div>
         </main>
     </body>

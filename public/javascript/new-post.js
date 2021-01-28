@@ -17,7 +17,7 @@ const populateEditor = function() {
     editorFormEl.appendChild(titleInputEl)
 
     const contentInputEl = document.createElement('div')
-    contentInputEl.innerHTML = '<label for="content">Content</label><input type="text" id="content" name="content" />'
+    contentInputEl.innerHTML = '<label for="content">Content</label><textarea type="text" id="content" name="content"></textarea>'
     editorFormEl.appendChild(contentInputEl)
 
     const postBtnnEl = document.createElement('div');
@@ -35,7 +35,7 @@ async function newFormHandler(event) {
 
     if (elem.classList.contains('login-form')) {
         const title = document.querySelector('input[name="title"]').value;
-        const post_text = document.querySelector('input[name="content"]').value;
+        const post_text = document.querySelector('textarea[name="content"]').value;
     
         const response = await fetch(`/api/posts`, {
             method: 'POST',

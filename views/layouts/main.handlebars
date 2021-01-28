@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="./stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <title>Bloglogna</title>
     </head>
 
     <body>
         <header>
             <nav>
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-plink" href="/">Home</a>
                 {{#if loggedIn}}
-                <a class="nav-link" href="/dashboard">Dashboard</a>
+                <a class="nav-plink" href="/dashboard">Dashboard</a>
                 <button id="logout" class="btn-no-style">Logout</button>
                 {{else}}
-                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-plink" href="/login">Login</a>
                 {{/if}}
             </nav>
             <div class="head-title">
