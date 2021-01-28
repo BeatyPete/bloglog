@@ -1,0 +1,11 @@
+<div class="post-btn-container">
+    <button class="post-btn">+ New Post</button>
+</div>
+
+{{#each posts as |post|}}
+<article>
+    {{> post-info post }}
+</article>
+{{/each}}
+
+<script src="/javascript/new-post.js"></script>
